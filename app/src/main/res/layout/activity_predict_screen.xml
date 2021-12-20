@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink">
+
+    <TextView
+        android:id="@+id/remainingPredict"
+        android:layout_width="290dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Remaining Predict: 5"
+        android:textColor="@color/dark_blue"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textClue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/predictText"
+        android:layout_width="272dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:hint="Enter a Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_blue"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPredict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClue" />
+
+    <Button
+        android:id="@+id/buttonPredict"
+        android:layout_width="160dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="150dp"
+        android:text="Send Predict"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textClue"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Clue"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/predictText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainingPredict" />
+</androidx.constraintlayout.widget.ConstraintLayout>
